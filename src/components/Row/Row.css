@@ -1,0 +1,17 @@
+* {
+  color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 10vh;
+  margin-right: 10px;
+  transition: transform 500ms;
+}
+
+
