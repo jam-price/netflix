@@ -1,9 +1,14 @@
-nav {
-    height: 3vh;
+.nav {
+    height: 5vh;
+    /* background-color: #141414; */
+    position: fixed;
 }
 
-img {
-    max-height: 100%;
-    width: ;
-    padding: 5px;
+.logo {
+    max-height: 3vh;
+}
+
+.logo img {
+    max-height: 60%;
+    margin: 5px;
 }
