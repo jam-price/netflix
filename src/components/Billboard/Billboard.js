@@ -25,21 +25,26 @@ function Billboard() {
         backgroundPosition: "center center",
       }}
     >
+    <div className="top-fade"></div>
       <div className="billboard-description">
         {/* Background video on div */}
-        <h2>{film.title}</h2>
+        <h2>{film?.title || film?.original_title || film?.name}</h2>
         <div className="billboard-buttons">
           <button className="play-button button">
             <img src={play} alt="play" />
             Play
           </button>
           <button className="info-button button">
-            <img src={info} alt="more information"/>
+            <img src={info} alt="more information" />
             More Info
           </button>
         </div>
-        <p>{film.overview}</p>
+        <div className="overview">
+          <p>{film.overview}</p>
+        </div>
       </div>
+
+      <div className="bottom-fade"></div>
     </header>
   );
 }

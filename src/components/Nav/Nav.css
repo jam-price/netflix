@@ -1,7 +1,8 @@
 .nav {
     height: 5vh;
-    /* background-color: #141414; */
+    background-color: #141414;
     position: fixed;
+    width: 100vw;
 }
 
 .logo {
