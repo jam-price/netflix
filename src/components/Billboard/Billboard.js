@@ -25,7 +25,6 @@ function Billboard() {
         backgroundPosition: "center center",
       }}
     >
-    <div className="top-fade"></div>
       <div className="billboard-description">
         {/* Background video on div */}
         <h2>{film?.title || film?.original_title || film?.name}</h2>
