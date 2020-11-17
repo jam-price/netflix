@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Cinzel:wght@500&family=Gloria+Hallelujah&family=Modak&family=Pacifico&family=Pangolin&display=swap');
+
 .billboard {
   height: 700px;
   object-fit: contain;
@@ -73,6 +75,10 @@ h2 {
     padding-top: 150px;
     height: 495px;
   }
+
+  .overview {
+    max-height: 380px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -83,8 +89,13 @@ h2 {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .overview {
+    max-height: 300px;
+  }
+}
+
 .overview {
-    max-height: 220px;
     overflow: scroll;
 }
 
@@ -96,6 +107,7 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px;
+  font-family: sans-serif;
 }
 
 .bottom-fade {
