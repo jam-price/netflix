@@ -9,9 +9,10 @@ const Row = ({ title, request }) => {
   useEffect(() => {
     fetch(request)
       .then((response) => response.json())
-      .then((jsonResponse) => setFilms(jsonResponse.results))
-      .then(console.log(films));
+      .then((jsonResponse) => setFilms(jsonResponse.results));
   }, [request]);
+
+  console.log(films)
 
   return (
     <div className="row">
