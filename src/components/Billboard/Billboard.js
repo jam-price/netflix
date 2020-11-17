@@ -28,6 +28,9 @@ function Billboard() {
       <div className="billboard-description">
         {/* Background video on div */}
         <h2>{film?.title || film?.original_title || film?.name}</h2>
+        <div className="overview">
+          <p>{film.overview}</p>
+        </div>
         <div className="billboard-buttons">
           <button className="play-button button">
             <img src={play} alt="play" />
@@ -38,9 +41,7 @@ function Billboard() {
             More Info
           </button>
         </div>
-        <div className="overview">
-          <p>{film.overview}</p>
-        </div>
+        
       </div>
 
       <div className="bottom-fade"></div>

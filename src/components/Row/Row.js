@@ -15,7 +15,7 @@ const Row = ({ title, request }) => {
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="poster-row">
         {films.map((film) => {
           return (

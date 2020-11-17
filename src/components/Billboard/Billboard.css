@@ -7,7 +7,7 @@
   margin-left: 50px;
   padding-top: 200px;
   width: 35%;
-  height:445px;
+  height: 445px;
   overflow: scroll;
 }
 
@@ -16,7 +16,7 @@
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .billboard-buttons {
@@ -33,7 +33,7 @@ h2 {
 
 .billboard-buttons :hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .button img {
@@ -46,6 +46,15 @@ h2 {
   min-width: 130px;
   font-size: 1.2rem;
   font-weight: 600;
+  outline: none;
+}
+
+.play-button:focus {
+  opacity: 1;
+}
+
+.info-button:focus {
+  opacity: 1;
 }
 
 .info-button {
@@ -55,28 +64,38 @@ h2 {
   min-width: 170px;
   font-size: 1.2rem;
   font-weight: 600;
+  outline: none;
 }
 
 @media screen and (max-width: 970px) {
   .billboard-description {
     width: 50%;
+    padding-top: 150px;
+    height: 495px;
   }
 }
 
 @media screen and (max-width: 650px) {
   .billboard-description {
     width: 80%;
+    padding-top: 100px;
+    height: 555px;
   }
 }
 
 .overview {
-    height: 195px;
-    overflow: hidden;
+    max-height: 220px;
+    overflow: scroll;
+}
+
+.overview::-webkit-scrollbar {
+  display: none;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  margin: 10px;
 }
 
 .bottom-fade {
