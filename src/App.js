@@ -19,6 +19,9 @@ function App() {
       <Row title="Horror Films" request={requests.horrorMovies}/>
       <Row title="Romance Films" request={requests.romanceMovies}/>
       <Row title="Documentaries" request={requests.documentaries}/>
+      <footer>
+        <p>Built by James Price <a href="http://j-price.co.uk" target='_blank' rel="noreferrer">j-price.co.uk</a></p>
+      </footer>
     </div>
   );
 }

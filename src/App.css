@@ -7,3 +7,18 @@
   background-color: #141414;
   min-height: 100vh;
 }
+
+footer {
+  margin-left: 40vw;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #e50914;
+}

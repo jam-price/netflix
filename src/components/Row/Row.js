@@ -47,7 +47,7 @@ const Row = ({ title, request }) => {
         })}
       </div>
           {trailerUrl ? <iframe title={trailerUrl} width="100%" height="auto" autoPlay src={trailerUrl} controls>
-          </iframe> : <div>No Trailer</div>}
+          </iframe> : <div></div>}
     </div>
   );
 };
