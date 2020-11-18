@@ -14,15 +14,6 @@ const Row = ({ title, request }) => {
       .then((jsonResponse) => setFilms(jsonResponse.results));
   }, [request]);
 
-  const opts = {
-    height: '390',
-    width: '100%',
-    playerVars: {
-      // fill
-      autoplay: 1,
-    }
-  }
-
   const handleClick = (film) => {
     const title = film.name ? film.name : film.original_title;
     console.log(title);
