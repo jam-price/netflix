@@ -32,7 +32,6 @@ function Billboard() {
       .then((jsonResponse) =>
         setFilm(jsonResponse.results[Math.floor(Math.random() * 10)])
       )
-      .then(console.log(film));
   }, []);
 
   return (
