@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import YouTube from "react-youtube";
 import "./Row.css";
 import movieTrailer from 'movie-trailer'
 
@@ -30,9 +29,15 @@ const Row = ({ title, request }) => {
     if (trailerUrl) {
       setTrailerUrl('');
     } else {
-      movieTrailer(title).then(res => setTrailerUrl(res)).catch(console.error)
+      movieTrailer(title).then(result => {
+        console.log(result)
+        let editedResult = result.replace('watch', 'embed')
+        setTrailerUrl(editedResult)
+      }).catch(console.error)
     }
   }
+
+  console.log(trailerUrl)
 
   return (
     <div className="row">
@@ -50,11 +55,8 @@ const Row = ({ title, request }) => {
           );
         })}
       </div>
-        {/* Can't get the below to work */}
-        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} /> }
-          {/* so */}
-          {/* {trailerUrl ? <video width="100%" height="auto" autoPlay src={trailerUrl} controls>
-          </video> : <div>No Trailer</div>} */}
+          {trailerUrl ? <iframe title={trailerUrl} width="100%" height="auto" autoPlay src={trailerUrl} controls>
+          </iframe> : <div>No Trailer</div>}
     </div>
   );
 };
