@@ -1,0 +1,24 @@
+.dropdown {
+    position: fixed;
+    left: 170px;
+    outline: none;
+    padding: auto;
+    top: 28px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+select {
+    outline-style: none;
+}
+
+option {
+    color: rgb(187, 187, 187);
+    background-color: black;
+}
+
+option:hover {
+    color: black;
+}
