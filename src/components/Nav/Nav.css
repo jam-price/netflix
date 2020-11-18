@@ -35,3 +35,13 @@
     object-fit: contain;
     right: 20px;
 }
+
+.icons {
+    position: fixed;
+    right: 70px;
+}
+
+.icon {
+    height: 20px;
+    padding: 10px;
+}
